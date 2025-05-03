@@ -69,8 +69,8 @@ export default function SignaturePadPage() {
   };
 
   return (
-    <div className="relative z-10 w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-16">
-      <Card className="relative backdrop-blur-lg xl:w-[50%] lg:w-[70%] md:w-[90%] w-full md:p-8 shadow-xl rounded-2xl mt-10  bg-transparent">
+    <div className="relative z-10 w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-16 bg-linear-to-r/shorter from-gray-100 to-gray-200">
+      <Card className="relative backdrop-blur-lg xl:w-[50%] lg:w-[70%] md:w-[90%] w-full md:p-8 shadow-xl rounded-2xl mt-10 bg-white">
         <h1 className="md:text-4xl text-2xl font-bold text-center text-black">
           Signature Pad
         </h1>
