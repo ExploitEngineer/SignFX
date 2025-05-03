@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SignFX
 
-## Getting Started
+<div align="center">
+  <img src="/api/placeholder/800/400" alt="SignFX Demo" />
+  <p>A modern signature creation app with fluid GLSL animations</p>
+</div>
 
-First, run the development server:
+## ✨ Features
+
+- **Interactive Signature Canvas**: Create smooth, natural signatures with customizable pens
+- **GLSL Animations**: Beautiful fluid animations powered by GLSL shaders
+- **Multiple Export Options**: Save signatures as PNG, SVG, or PDF
+- **Dark/Light Mode**: Seamless theme switching with system preference detection
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, TypeScript, React
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Animations**: GSAP for transitions, GLSL for fluid effects
+- **State Management**: React Context API
+- **Performance**: Optimized canvas rendering with hardware acceleration
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/ExploitEngineer/SignFX.git
+
+# Navigate to the project directory
+cd SignFX
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Start the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Use the toolbar to select pen style, color, and thickness
+2. Sign on the canvas using mouse, touchscreen, or stylus
+3. Apply animation effects from the effects panel
+4. Preview your signature with animations
+5. Download your signature in your preferred format
 
-## Learn More
+## 🔧 Configuration
 
-To learn more about Next.js, take a look at the following resources:
+The app can be configured through environment variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_CANVAS_WIDTH=1000
+NEXT_PUBLIC_CANVAS_HEIGHT=300
+NEXT_PUBLIC_MAX_UNDO_HISTORY=10
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See `.env.example` for all available options.
 
-## Deploy on Vercel
+## 📱 Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+SignFX is designed to work flawlessly across all device sizes:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Desktop**: Full-featured experience with keyboard shortcuts
+- **Tablet**: Optimized for stylus input with palm rejection
+- **Mobile**: Simplified UI with touch-optimized controls
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- [React Signature Canvas](https://github.com/agilgur5/react-signature-canvas) for inspiration
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [GSAP](https://greensock.com/gsap/) for the smooth animations
+- Icon pack by [Lucide](https://lucide.dev/)
+
+---
+
+<div align="center">
+  <p>Created with ❤️ by <a href="https://github.com/ExploitEngineer">ExploitEngineer</a></p>
+</div>
