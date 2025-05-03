@@ -1,7 +1,6 @@
 # SignFX
 
 <div align="center">
-  <img src="/api/placeholder/800/400" alt="SignFX Demo" />
   <p>A modern signature creation app with fluid GLSL animations</p>
 </div>
 
