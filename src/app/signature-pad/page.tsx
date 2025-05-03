@@ -70,7 +70,7 @@ export default function SignaturePadPage() {
 
   return (
     <div className="relative z-10 w-full min-h-screen flex items-center justify-center px-4 sm:px-8 md:px-16">
-      <Card className="xl:w-[50%] lg:w-[70%] md:w-[90%] w-full md:p-8 shadow-xl rounded-2xl mt-10 bg-white">
+      <Card className="relative backdrop-blur-lg xl:w-[50%] lg:w-[70%] md:w-[90%] w-full md:p-8 shadow-xl rounded-2xl mt-10  bg-transparent">
         <h1 className="md:text-4xl text-2xl font-bold text-center text-black">
           Signature Pad
         </h1>
@@ -78,7 +78,7 @@ export default function SignaturePadPage() {
           <div className="rounded-xl overflow-hidden border border-gray-300">
             <canvas
               ref={canvasRef}
-              className="w-full h-[300px] bg-white cursor-crosshair"
+              className="w-full h-[300px] bg-whtie cursor-crosshair"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:pb-2 pb-6">
@@ -117,7 +117,12 @@ export default function SignaturePadPage() {
           <div className="flex flex-wrap gap-4 md:justify-center justify-between pt-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="default" className="md:text-sm md:font-medium text-xs font-bold">Download As</Button>
+                <Button
+                  variant="default"
+                  className="md:text-sm md:font-medium text-xs font-bold"
+                >
+                  Download As
+                </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="center">
                 <DropdownMenuItem onClick={() => downloadImage("png")}>
@@ -131,7 +136,11 @@ export default function SignaturePadPage() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Button variant="destructive" className="md:text-sm md:font-medium text-xs font-bold" onClick={clearCanvas}>
+            <Button
+              variant="destructive"
+              className="md:text-sm md:font-medium text-xs font-bold"
+              onClick={clearCanvas}
+            >
               Clear
             </Button>
           </div>

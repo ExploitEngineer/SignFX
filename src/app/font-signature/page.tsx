@@ -38,7 +38,7 @@ const fonts = [
 const formats = ["png", "jpeg", "svg"];
 
 export default function FontSignaturePage() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("DURAS");
   const [textColor, setTextColor] = useState("#000000");
   const [fontSize, setFontSize] = useState(48);
 
